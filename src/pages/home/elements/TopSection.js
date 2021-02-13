@@ -4,7 +4,7 @@ import colors from '../../../colors'
 import FaucetAnimation from './FaucetAnimation'
 
 export default function Section() {
-  const Section = styled.section`
+  const TopSection = styled.section`
     background-color: ${colors.background};
     padding-top: 10vh;
     height: 60vh;
@@ -30,13 +30,13 @@ export default function Section() {
     justify-content: center;
   `
   return (
-    <Section>
+    <TopSection>
       <OpeningText>
         This is an example paragraph that I hope will work for this project bbut I don't know if I will be able to complete it on time.
       </OpeningText>
       <AnimationContainer>
         <FaucetAnimation />
       </AnimationContainer>
-    </Section>
+    </TopSection>
   )
 }

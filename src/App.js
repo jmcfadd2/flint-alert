@@ -1,15 +1,20 @@
 import React from 'react'
-import Header from './components/Header'
-import Section from './pages/home/elements/Section';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Header from './components/header/Header'
+import Section from './components/Section';
+import MidSection from './pages/home/elements/MidSection';
+import TopSection from './pages/home/elements/TopSection';
 
 function App() {
   return (
-    <div>
-    <Header/>
-    <Section>
-    <Header />
-    </Section>
-    </div>
+    <Router>
+      <div>
+      <Header/>
+      <TopSection />
+      <MidSection />
+      
+      </div>
+    </Router>
   );
 }
 
