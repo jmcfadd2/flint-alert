@@ -1,19 +1,20 @@
 import React from 'react'
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from './components/header/Header'
 import Section from './components/Section';
+import Sidebar from './components/sidebar/Sidebar';
 import MidSection from './pages/home/elements/MidSection';
 import TopSection from './pages/home/elements/TopSection';
+import home from './pages/home/home';
 
 function App() {
   return (
     <Router>
-      <div>
-      <Header/>
-      <TopSection />
-      <MidSection />
-      
-      </div>
+      <Header />
+      <Sidebar />
+      <Switch>
+        <Route path='/'component={home} />
+      </Switch>
     </Router>
   );
 }

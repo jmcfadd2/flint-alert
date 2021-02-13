@@ -1,4 +1,3 @@
-import moduleName from 'module'
 import { Link as LinkRoute } from 'react-router-dom'
 import { Link as LinkScroll } from 'react-scroll'
 import styled from 'styled-components'
