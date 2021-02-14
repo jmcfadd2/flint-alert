@@ -5,13 +5,13 @@ import { Link } from 'react-scroll'
 import styled from 'styled-components'
 import { MobileIcon, NavbarContainer, NavBtn, NavBtnLink, NavItem, NavLinks, NavLogo, NavMenu, NavPanel } from './HeaderElements'
 
-export default function Header() {
+export default function Header({ toggle }) {
 
   return (
     <NavPanel>
       <NavbarContainer>
         <NavLogo to='/'>Flint-Alert</NavLogo>
-        <MobileIcon>
+        <MobileIcon onClick={toggle}>
           <FaBars />
         </MobileIcon>
         <NavMenu>

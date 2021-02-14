@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from './components/header/Header'
 import Section from './components/Section';
@@ -8,10 +8,16 @@ import TopSection from './pages/home/elements/TopSection';
 import home from './pages/home/home';
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+  
+  const toggle = () => {
+    setIsOpen(!isOpen)
+    console.log(isOpen);
+  }
   return (
     <Router>
-      <Header />
-      <Sidebar />
+      <Header toggle={toggle} />
+      <Sidebar isOpen={isOpen} toggle={toggle} />
       <Switch>
         <Route path='/'component={home} />
       </Switch>
