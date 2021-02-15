@@ -1,8 +1,8 @@
 import React from 'react'
 import Lottie from 'react-lottie'
-import faucetData from '../../../assets/faucetData.json'
+import faucetData from '../../assets/faucetData.json'
 
-export default function FaucetAnimation() {
+export default function FaucetAni() {
   const defaultOptions = {
     loop: true,
     autoplay: true,

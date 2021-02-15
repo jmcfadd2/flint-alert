@@ -1,6 +1,6 @@
 import React from 'react'
 import Lottie from 'react-lottie'
-import boilData from '../../../assets/boilData.json'
+import boilData from '../../assets/boilData.json'
 
 export default function BoilAni() {
   const defaultOptions = {
@@ -15,8 +15,8 @@ export default function BoilAni() {
     <div>
       <Lottie 
         options={defaultOptions}
-        width={'20vh'}
-        height={'20vh'}
+        width={'80vh'}
+        height={'80vh'}
         speed={.65}
       />
     </div>
