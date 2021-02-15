@@ -15,8 +15,8 @@ export default function BoilAni() {
     <div>
       <Lottie 
         options={defaultOptions}
-        width={'80vh'}
-        height={'80vh'}
+        width={'auto'}
+        height={'auto'}
         speed={.65}
       />
     </div>

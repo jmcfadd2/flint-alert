@@ -15,8 +15,8 @@ export default function FaucetAni() {
     <div>
       <Lottie 
         options={defaultOptions}
-        width={'20vh'}
-        height={'20vh'}
+        width={'auto'}
+        height={'auto'}
         speed={.65}
       />
     </div>

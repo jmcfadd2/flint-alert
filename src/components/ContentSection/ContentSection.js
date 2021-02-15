@@ -2,7 +2,6 @@ import React from 'react'
 import { Heading, Paragraph, TextContainer } from '../ProblemSection/ProblemSectionElements'
 import SectionWrapper from '../SectionWrapper'
 import { AniContainer } from './ContentSectionElements'
-import BoilAni from '../animations/BoilAni'
 
 export default function ContentSection({heading, text, Animation }) {
   return (
