@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
-import Header from '../../components/header/Header'
-import TopSection from './elements/TopSection'
-import MidSection from './elements/MidSection'
+
 import Hero from '../../components/hero/Hero'
+import ProblemSection from '../../components/ProblemSection/ProblemSection'
 
 export default function Home() {
   
@@ -11,6 +10,7 @@ export default function Home() {
     <div>
       <div>
         <Hero />
+        <ProblemSection />
       </div>
     </div>
   )

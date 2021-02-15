@@ -3,7 +3,7 @@ import { Link as LinkScroll } from 'react-scroll'
 import styled from 'styled-components'
 
 export const NavPanel = styled.nav`
-    background-color: #000;
+    background-color: transparent;
     height: 80px;
     margin-top: -80px;
     display: flex;
