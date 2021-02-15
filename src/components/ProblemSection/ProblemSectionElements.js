@@ -11,10 +11,10 @@ export const HealthVideo = styled.video`
 export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin-right: 60px;
+  margin-right: ${props => !props.orient ? '60px' : 'auto'};
   height: 50vh;
   width: 50vh;
-  margin-left: auto;
+  margin-left: ${props => !props.orient ? 'auto' : '60px'};
   margin-top: auto;
   margin-bottom: 20vh;
 `

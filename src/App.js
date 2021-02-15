@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Header from './components/header/Header'
+import Navbar from './components/header/Navbar';
+
 
 import Sidebar from './components/sidebar/Sidebar';
 
@@ -15,7 +16,7 @@ function App() {
   }
   return (
     <Router>
-      <Header toggle={toggle} />
+      <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Switch>
         <Route path='/'component={home} />

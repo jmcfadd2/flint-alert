@@ -3,9 +3,9 @@ import { Link as LinkRoute } from 'react-router-dom'
 import { FaBars } from 'react-icons/fa'
 import { Link } from 'react-scroll'
 import styled from 'styled-components'
-import { MobileIcon, NavbarContainer, NavBtn, NavBtnLink, NavItem, NavLinks, NavLogo, NavMenu, NavPanel } from './HeaderElements'
+import { MobileIcon, NavbarContainer, NavBtn, NavBtnLink, NavItem, NavLinks, NavLogo, NavMenu, NavPanel } from './NavbarElements'
 
-export default function Header({ toggle }) {
+export default function Navbar({ toggle }) {
 
   return (
     <NavPanel>

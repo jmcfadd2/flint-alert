@@ -18,6 +18,7 @@ export default function Home() {
           heading={heading} 
           text={text}
           Animation={Animation}
+          flip={index%2 === 0 ? true : false}
         />
         )) }
         
