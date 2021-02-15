@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import ContentSection from '../../components/ContentSection/ContentSection'
+import ContentSection from '../components/ContentSection/ContentSection'
 
-import Hero from '../../components/hero/Hero'
-import ProblemSection from '../../components/ProblemSection/ProblemSection'
+import Hero from '../components/hero/Hero'
+import ProblemSection from '../components/ProblemSection/ProblemSection'
 
-import { textData } from '../../components/textData'
+import { textData } from '../components/textData'
 
 export default function Home() {
   

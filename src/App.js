@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Navbar from './components/header/Navbar';
+import Footer from './components/Footer/Footer';
+import Navbar from './components/Navbar/Navbar';
 
 
 import Sidebar from './components/sidebar/Sidebar';
 
-import home from './pages/home/home';
+import home from './pages/home';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,6 +22,7 @@ function App() {
       <Switch>
         <Route path='/'component={home} />
       </Switch>
+      <Footer />
     </Router>
   );
 }
