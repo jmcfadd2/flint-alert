@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link as LinkRoute } from 'react-router-dom'
 import { FaBars } from 'react-icons/fa'
 import { Link } from 'react-scroll'
@@ -6,7 +6,10 @@ import styled from 'styled-components'
 import { MobileIcon, NavbarContainer, NavBtn, NavBtnLink, NavItem, NavLinks, NavLogo, NavMenu, NavPanel } from './NavbarElements'
 
 export default function Navbar({ toggle }) {
-
+  
+  const [scrolledDown, setScrolledDown] = useState(false);
+  
+  
   return (
     <NavPanel>
       <NavbarContainer>
@@ -16,16 +19,16 @@ export default function Navbar({ toggle }) {
         </MobileIcon>
         <NavMenu>
           <NavItem>
-            <NavLinks to='about'>About</NavLinks>
+            <NavLinks to='about'>Problem</NavLinks>
           </NavItem>
           <NavItem>
-            <NavLinks to='resources'>Resources</NavLinks>
+            <NavLinks to='resources'>Solution</NavLinks>
           </NavItem>
           <NavItem>
-            <NavLinks to='resources'>Documentation</NavLinks>
+            <NavLinks to='resources'>How</NavLinks>
           </NavItem>
           <NavItem>
-            <NavLinks to='contact'>Contact</NavLinks>
+            <NavLinks to='contact'>Help</NavLinks>
           </NavItem>
         </NavMenu>
         <NavBtn>
