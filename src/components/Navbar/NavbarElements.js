@@ -1,9 +1,10 @@
 import { Link as LinkRoute } from 'react-router-dom'
 import { Link as LinkScroll } from 'react-scroll'
 import styled from 'styled-components'
+import colors from '../../colors'
 
 export const NavPanel = styled.nav`
-    background-color: transparent;
+    background-color: ${props => props.scrolling ? colors.blue : 'transparent'};
     height: 80px;
     margin-top: -80px;
     display: flex;

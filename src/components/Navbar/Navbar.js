@@ -1,14 +1,33 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { FaBars } from 'react-icons/fa'
 import { MobileIcon, NavbarContainer, NavBtn, NavBtnLink, NavItem, NavLinks, NavLogo, NavMenu, NavPanel } from './NavbarElements'
 
 export default function Navbar({ toggle }) {
   
-  
+  let listener = null
+  const [scrollState, setScrollState] = useState(false)
+
+  useEffect(() => {
+    listener = document.addEventListener("scroll", e => {
+      var scrolled = document.scrollingElement.scrollTop
+      if (scrolled >= 120) {
+        if (scrollState !== true) {
+          setScrollState(true)
+        }
+      } else {
+        if (scrollState !== false) {
+          setScrollState(false)
+        }
+      }
+    })
+    return () => {
+      document.removeEventListener("scroll", listener)
+    }
+  }, [scrollState])
   
   
   return (
-    <NavPanel>
+    <NavPanel scrolling={scrollState}>
       <NavbarContainer>
         <NavLogo to='/'>Flint-Alert</NavLogo>
         <MobileIcon onClick={toggle}>
