@@ -1,13 +1,10 @@
-import React, { useEffect, useState } from 'react'
-import { Link as LinkRoute } from 'react-router-dom'
+import React from 'react'
 import { FaBars } from 'react-icons/fa'
-import { Link } from 'react-scroll'
-import styled from 'styled-components'
 import { MobileIcon, NavbarContainer, NavBtn, NavBtnLink, NavItem, NavLinks, NavLogo, NavMenu, NavPanel } from './NavbarElements'
 
 export default function Navbar({ toggle }) {
   
-  const [scrolledDown, setScrolledDown] = useState(false);
+  
   
   
   return (

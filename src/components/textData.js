@@ -1,4 +1,3 @@
-import moduleName from 'module'
 import BoilAni from './animations/BoilAni'
 import NotifyAni from './animations/NotifyAni'
 import SignAni from './animations/SignAni'

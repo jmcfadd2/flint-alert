@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import ContentSection from '../components/ContentSection/ContentSection'
 
 import Hero from '../components/hero/Hero'
