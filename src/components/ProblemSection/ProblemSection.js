@@ -1,7 +1,7 @@
 import React from 'react'
 import SectionWrapper from '../SectionWrapper'
 import { Heading, HealthVideo, Paragraph, TextContainer } from './ProblemSectionElements'
-import Vid from '../../assets/water.mp4'
+import Vid from '../../assets/public-health.mp4'
 
 
 export default function ProblemSection() {
@@ -18,6 +18,7 @@ export default function ProblemSection() {
       <HealthVideo 
         controls
         src={Vid}
+        width={200}
       />
     </SectionWrapper>
   )

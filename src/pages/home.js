@@ -7,23 +7,24 @@ import ProblemSection from '../components/ProblemSection/ProblemSection'
 import { textData } from '../components/textData'
 
 export default function Home() {
-  
+
   return (
     <div>
       <div>
         <Hero />
         <ProblemSection />
-        {textData.map(({heading, text,Animation}, index) => (
-          <ContentSection 
-          heading={heading} 
-          text={text}
-          Animation={Animation}
-          flip={index%2 === 0 ? true : false}
-        />
-        )) }
-        
-        
-        
+        {textData.map((content, index) => (
+          <ContentSection
+            Animation={content.Animation}
+            button={content.callToAction}
+            flip={index % 2 === 0 ? true : false}
+            heading={content.heading}
+            text={content.text}
+          />
+        ))}
+
+
+
       </div>
     </div>
   )

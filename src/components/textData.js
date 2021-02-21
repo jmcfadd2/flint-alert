@@ -5,16 +5,19 @@ export const textData = [
   {
     heading: 'The Solution',
     text: 'Establish Boil Water notifications as a part of the Public Safety Alert ',
-    Animation: <BoilAni />
+    Animation: <BoilAni />,
+    callToAction: null
   },
   {
     heading: 'How To Get there?',
     text: 'Add boil water notifications to Public Safety Alert system so that smartphones are notfied',
-    Animation: <NotifyAni />
+    Animation: <NotifyAni />,
+    callToAction: null
   },
   {
     heading: 'How To You Can Help?',
     text: 'Sign the petition to bring local officials awareness to the issue',
-    Animation: <SignAni />
+    Animation: <SignAni />,
+    callToAction: 'Sign Here'
   },
 ]
