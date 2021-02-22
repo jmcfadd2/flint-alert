@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Heading, Paragraph, TextContainer } from '../ProblemSection/ProblemSectionElements'
 import SectionWrapper from '../SectionWrapper'
 import { Fade } from 'react-reveal'

@@ -4,11 +4,11 @@ import { MobileIcon, NavbarContainer, NavBtn, NavBtnLink, NavItem, NavLinks, Nav
 
 export default function Navbar({ toggle }) {
   
-  let listener = null
+  
   const [scrollState, setScrollState] = useState(false)
 
   useEffect(() => {
-    listener = document.addEventListener("scroll", e => {
+    let listener = document.addEventListener("scroll", e => {
       var scrolled = document.scrollingElement.scrollTop
       if (scrolled >= 120) {
         if (scrollState !== true) {
