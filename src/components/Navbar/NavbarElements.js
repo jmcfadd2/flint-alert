@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import colors from '../../colors'
 
 export const NavPanel = styled.nav`
-    background-color: ${props => props.scrolling ? colors.blue : 'transparent'};
+    background-color: ${props => props.scrolling ? colors.secondary : 'transparent'};
     height: 80px;
     margin-top: -80px;
     display: flex;
@@ -98,7 +98,7 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(LinkRoute)`
     border-radius: 50px;
-    background: #01bf71;
+    background: ${colors.blue};
     white-space: nowrap;
     padding: 10px 22px;
     color: #010606;

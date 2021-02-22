@@ -9,7 +9,8 @@ export default function SectionWrapper({children, background}) {
     height: 60vh;
     display: flex;
     @media (max-width: 800px) {
-      flex-direction: column
+      flex-direction: column;
+      height: auto
     }
   `
   return (

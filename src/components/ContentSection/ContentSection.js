@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Heading, Paragraph, TextContainer } from '../ProblemSection/ProblemSectionElements'
 import SectionWrapper from '../SectionWrapper'
 import { Fade } from 'react-reveal'
@@ -6,6 +6,7 @@ import { AniContainer } from './ContentSectionElements'
 import { Button } from '../button/ButtonElement'
 
 export default function ContentSection({ heading, text, Animation, flip, button }) {
+  
   return (
     <>
       {!flip ? (
@@ -39,7 +40,7 @@ export default function ContentSection({ heading, text, Animation, flip, button 
         </SectionWrapper>
       ) : (
           <SectionWrapper>
-
+            
             <AniContainer orient={flip}>
               <Fade bottom>
                 {Animation}

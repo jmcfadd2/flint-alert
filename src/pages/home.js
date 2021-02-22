@@ -3,11 +3,11 @@ import ContentSection from '../components/ContentSection/ContentSection'
 
 import Hero from '../components/hero/Hero'
 import ProblemSection from '../components/ProblemSection/ProblemSection'
-
+import useSimpleMatchMedia from 'react-simple-matchmedia'
 import { textData } from '../components/textData'
 
 export default function Home() {
-
+  const matched = useSimpleMatchMedia('phone', 'tablet')
   return (
     <div>
       <div>
@@ -17,7 +17,7 @@ export default function Home() {
           <ContentSection
             Animation={content.Animation}
             button={content.callToAction}
-            flip={index % 2 === 0 ? true : false}
+            flip={!matched && index % 2 === 0 ? true : false}
             heading={content.heading}
             text={content.text}
           />

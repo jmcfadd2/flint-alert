@@ -9183,6 +9183,11 @@ react-scroll@^1.8.1:
     lodash.throttle "^4.1.1"
     prop-types "^15.7.2"
 
+react-simple-matchmedia@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/react-simple-matchmedia/-/react-simple-matchmedia-3.1.0.tgz#e530f7f50562a98720f11cfac71c9e1de4ae5219"
+  integrity sha512-RXH+O2SxKLmM10I4ep5iyvDy9XZqIa7q10GAACDI64kWcP06rKoTHo5Yeki1XbUNVUjhMb0P3ZYCkaE3TKKp9Q==
+
 react@^17.0.1:
   version "17.0.1"
   resolved "https://registry.yarnpkg.com/react/-/react-17.0.1.tgz#6e0600416bd57574e3f86d92edba3d9008726127"
