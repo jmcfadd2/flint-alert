@@ -9,12 +9,17 @@ export default function Sidebar({ toggle, isOpen }) {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to='about' onClick={toggle}>About</SidebarLink>
-          <SidebarLink to='discover' onClick={toggle}>Discover</SidebarLink>
-          <SidebarLink to='resources' onClick={toggle}>Resources</SidebarLink>
+          <SidebarLink smooth to='problem' onClick={toggle}>Problem</SidebarLink>
+          <SidebarLink smooth to='solution' onClick={toggle}>Solution</SidebarLink>
+          <SidebarLink smooth to='how' onClick={toggle}>How</SidebarLink>
+          <SidebarLink smooth to='help' onClick={toggle}>Help</SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
-          <SidebarRoute to='/contact' onClick={toggle}>Contact Us</SidebarRoute>
+          <SidebarRoute 
+            target='_blank'
+            href='http://chng.it/V5n7bdmj' 
+            onClick={toggle}>Sign Petition
+            </SidebarRoute>
         </SideBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>

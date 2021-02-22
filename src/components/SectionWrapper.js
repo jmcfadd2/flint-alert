@@ -1,9 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Element } from 'react-scroll'
 import colors from '../colors'
 
-export default function SectionWrapper({children, background}) {
-  const Section = styled.section`
+export default function SectionWrapper({children, background, name}) {
+  const Section = styled(Element)`
     background-color: ${colors.secondary};
     padding-top: 10vh;
     height: 60vh;
@@ -14,7 +15,7 @@ export default function SectionWrapper({children, background}) {
     }
   `
   return (
-    <Section>
+    <Section name={name}>
       {children}
     </Section>
   )

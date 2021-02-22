@@ -29,26 +29,31 @@ export default function Navbar({ toggle }) {
   return (
     <NavPanel scrolling={scrollState}>
       <NavbarContainer>
-        <NavLogo to='/'>Flint-Alert</NavLogo>
+        <NavLogo to='/'>Boil-Water-Alert</NavLogo>
         <MobileIcon onClick={toggle}>
           <FaBars />
         </MobileIcon>
         <NavMenu>
           <NavItem>
-            <NavLinks to='about'>Problem</NavLinks>
+            <NavLinks  smooth to='problem'>Problem</NavLinks>
           </NavItem>
           <NavItem>
-            <NavLinks to='resources'>Solution</NavLinks>
+            <NavLinks  smooth to='solution'>Solution</NavLinks>
           </NavItem>
           <NavItem>
-            <NavLinks to='resources'>How</NavLinks>
+            <NavLinks  smooth to='how'>How</NavLinks>
           </NavItem>
           <NavItem>
-            <NavLinks to='contact'>Help</NavLinks>
+            <NavLinks  smooth to='help'>Help</NavLinks>
           </NavItem>
         </NavMenu>
         <NavBtn>
-          <NavBtnLink to='/signin'>Contact Us</NavBtnLink>
+          <NavBtnLink 
+          target='h_blank'
+            href='http://chng.it/V5n7bdmj'
+          >
+            Sign the Petition
+            </NavBtnLink>
         </NavBtn>
       </NavbarContainer>
     </NavPanel>

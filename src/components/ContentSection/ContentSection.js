@@ -5,12 +5,12 @@ import { Fade } from 'react-reveal'
 import { AniContainer } from './ContentSectionElements'
 import { Button } from '../button/ButtonElement'
 
-export default function ContentSection({ heading, text, Animation, flip, button }) {
-  
+export default function ContentSection({ heading, text, Animation, flip, button, name }) {
+
   return (
     <>
       {!flip ? (
-        <SectionWrapper>
+        <SectionWrapper name={name}>
 
           <TextContainer>
 
@@ -22,6 +22,8 @@ export default function ContentSection({ heading, text, Animation, flip, button 
             </Paragraph>
             {button &&
               <Button
+                target='_blank'
+                href='http://chng.it/V5n7bdmj'
                 primary='true'
                 dark='true'
               >
@@ -39,8 +41,8 @@ export default function ContentSection({ heading, text, Animation, flip, button 
 
         </SectionWrapper>
       ) : (
-          <SectionWrapper>
-            
+          <SectionWrapper name={name}>
+
             <AniContainer orient={flip}>
               <Fade bottom>
                 {Animation}
@@ -55,14 +57,16 @@ export default function ContentSection({ heading, text, Animation, flip, button 
               <Paragraph>
                 {text}
               </Paragraph>
-              {button && 
-              <Button
-                primary='true'
-                dark='true'
-              >
-              {button}
-              </Button>
-              
+              {button &&
+                <Button
+                  target='_blank'
+                  href='http://chng.it/V5n7bdmj'
+                  primary='true'
+                  dark='true'
+                >
+                  {button}
+                </Button>
+
               }
             </TextContainer>
 

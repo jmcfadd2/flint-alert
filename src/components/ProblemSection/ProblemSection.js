@@ -6,7 +6,7 @@ import Vid from '../../assets/public-health.mp4'
 
 export default function ProblemSection() {
   return (
-    <SectionWrapper>
+    <SectionWrapper name='problem'>
       <TextContainer>
         <Heading>
           The Problem

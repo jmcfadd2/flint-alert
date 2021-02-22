@@ -20,6 +20,7 @@ export default function Home() {
             flip={!matched && index % 2 === 0 ? true : false}
             heading={content.heading}
             text={content.text}
+            name={content.name}
           />
         ))}
 

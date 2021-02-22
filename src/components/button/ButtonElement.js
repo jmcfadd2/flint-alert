@@ -1,7 +1,6 @@
 import styled from 'styled-components'
-import { Link } from 'react-scroll'
 import colors from '../../colors'
-export const Button = styled(Link)`
+export const Button = styled.a`
   border-radius: 50px;
   background: ${({primary}) => (primary ? colors.blue : '#010606') };
   white-space: nowrap;
@@ -13,6 +12,7 @@ export const Button = styled(Link)`
   cursor: pointer;
   display: flex;
   justify-content: center;
+  text-decoration: none;
 
   &:hover {
     transition: all 0.2s ease-in-out;

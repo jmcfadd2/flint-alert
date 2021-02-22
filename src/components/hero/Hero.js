@@ -17,13 +17,14 @@ export default function Hero() {
         <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
       </HeroBg>
       <HeroContent>
-        <HeroH1> Clean Water Is a Human Right </HeroH1>
+        <HeroH1> Clean Water Is A Human Right </HeroH1>
         <HeroP>
-          Help protect at risk communities from being exposed to poor quality water
+          Help protect communities from  being unknowingly exposed to poor quality water
         </HeroP>
         <HeroBtnWrapper>
           <Button
-            to='contact'
+            target='_blank'
+            href='http://chng.it/V5n7bdmj'
             onMouseEnter={onHover}
             onMouseLeave={onHover}
             primary='true'
