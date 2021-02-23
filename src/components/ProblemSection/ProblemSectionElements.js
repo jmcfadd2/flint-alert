@@ -45,6 +45,7 @@ export const Paragraph = styled.p`
   margin-top: 10;
   margin-bottom: auto;
   font-size: 1.5rem;
+  color: white;
   @media (max-width: 768px) {
     text-align: center;
   }

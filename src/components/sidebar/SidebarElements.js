@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import {FaTimes } from 'react-icons/fa'
 import { Link as LinkScroll } from 'react-scroll'
+import colors from '../../colors'
 export const SidebarContainer = styled.aside`
   position: fixed;
   z-index: 999; 
@@ -37,6 +38,8 @@ export const SidebarMenu = styled.ul`
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 80px);
   text-align: center;
+  
+  margin-right: 7vh;
 
   @media screen and (max-width: 480px) {
     grid-template-rows: repeat(6, 60px)
@@ -56,7 +59,7 @@ export const SidebarLink = styled(LinkScroll)`
   cursor: pointer;
 
   &:hover {
-    color: #01bf71;
+    color: ${colors.blue};
     transition: 0.2s ease-in-out;
   }
 `
@@ -68,7 +71,7 @@ export const SideBtnWrap = styled.div`
 
 export const SidebarRoute = styled.a`
   border-radius: 50px;
-  background: #01bf71;
+  background: ${colors.blue};
   white-space: nowrap;
   padding: 16px 64px;
   color: #010606;
