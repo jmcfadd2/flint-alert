@@ -48,6 +48,7 @@ export const HeroContent = styled.div`
   z-index: 3;
   max-width: 1200px;
   position: absolute;
+  top: 130;
   padding: 8px 24px;
   display: flex;
   flex-direction: column;
