@@ -17,6 +17,7 @@ export default function Home() {
           <ContentSection
             Animation={content.Animation}
             button={content.callToAction}
+            // If not smaller screen size flip text & media
             flip={!matched && index % 2 === 0 ? true : false}
             heading={content.heading}
             text={content.text}

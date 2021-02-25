@@ -19,7 +19,7 @@ export default function Hero() {
       <HeroContent>
         <HeroH1> Clean Water Is A Human Right </HeroH1>
         <HeroP>
-          Help protect communities from  being unknowingly exposed to poor quality water
+          Help protect communities from being <br/> exposed to poor quality water
         </HeroP>
         <HeroBtnWrapper>
           <Button

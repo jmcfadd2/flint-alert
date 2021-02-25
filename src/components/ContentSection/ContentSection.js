@@ -32,7 +32,6 @@ export default function ContentSection({ heading, text, Animation, flip, button,
             }
           </TextContainer>
 
-
           <AniContainer>
             <Fade bottom>
               {Animation}
@@ -48,7 +47,6 @@ export default function ContentSection({ heading, text, Animation, flip, button,
                 {Animation}
               </Fade>
             </AniContainer>
-
 
             <TextContainer orient={flip}>
               <Heading>
