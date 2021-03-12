@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import colors from '../../colors'
 export const HealthVideo = styled.iframe`
   height: 50vh;
   width: 70vh;
@@ -34,7 +35,7 @@ export const TextContainer = styled.div`
 export const Heading = styled.h3`
   margin: 0;
   margin-top: auto;
-  
+  color: ${colors.accent};
   font-size: 2rem;
   @media (max-width: 768px) {
     text-align: center;

@@ -11,7 +11,7 @@ export default function ProblemSection() {
           The Problem
         </Heading>
         <Paragraph>
-          We are going to bring clean water to the forefront of public service announcements
+          Bring clean water to the forefront of public service announcements
         </Paragraph>
       </TextContainer>
       

@@ -3,8 +3,8 @@ import { FaBars } from 'react-icons/fa'
 import { MobileIcon, NavbarContainer, NavBtn, NavBtnLink, NavItem, NavLinks, NavLogo, NavMenu, NavPanel } from './NavbarElements'
 
 export default function Navbar({ toggle }) {
-  
-  
+
+
   const [scrollState, setScrollState] = useState(false)
 
   useEffect(() => {
@@ -24,8 +24,8 @@ export default function Navbar({ toggle }) {
       document.removeEventListener("scroll", listener)
     }
   }, [scrollState])
-  
-  
+
+
   return (
     <NavPanel scrolling={scrollState}>
       <NavbarContainer>
@@ -35,21 +35,21 @@ export default function Navbar({ toggle }) {
         </MobileIcon>
         <NavMenu>
           <NavItem>
-            <NavLinks  smooth to='problem'>Problem</NavLinks>
+            <NavLinks spy smooth offset={-200} to='problem'>Problem</NavLinks>
           </NavItem>
           <NavItem>
-            <NavLinks  smooth to='solution'>Solution</NavLinks>
+            <NavLinks spy smooth offset={-200} to='solution'>Solution</NavLinks>
           </NavItem>
           <NavItem>
-            <NavLinks  smooth to='how'>How</NavLinks>
+            <NavLinks spy smooth offset={-200} to='how'>How</NavLinks>
           </NavItem>
           <NavItem>
-            <NavLinks  smooth to='help'>Help</NavLinks>
+            <NavLinks spy smooth offset={-200} to='help'>Help</NavLinks>
           </NavItem>
         </NavMenu>
-        <NavBtn>
-          <NavBtnLink 
-          target='h_blank'
+        <NavBtn  >
+          <NavBtnLink
+            target='h_blank'
             href='http://chng.it/V5n7bdmj'
           >
             Sign the Petition

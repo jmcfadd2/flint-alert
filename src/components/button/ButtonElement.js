@@ -15,7 +15,7 @@ export const Button = styled.a`
   text-decoration: none;
 
   &:hover {
-    transition: all 0.2s ease-in-out;
-    background: ${({ primary }) => (primary? '#fff' : '#01bf71')};
+    transition: all 0.1s ease-in-out;
+    background: ${colors.accent}
   }
 `

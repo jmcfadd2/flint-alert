@@ -18,7 +18,7 @@ export const textData = [
   },
   {
     heading: 'How To You Can Help?',
-    text: 'Sign the petition to bring local officials awareness to the issue',
+    text: 'Sign the petition to bring local official\'s awareness to the issue',
     Animation: <SignAni />,
     callToAction: 'Sign Here',
     name: 'help'

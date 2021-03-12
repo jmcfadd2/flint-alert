@@ -59,8 +59,8 @@ export default function ContentSection({ heading, text, Animation, flip, button,
                 <Button
                   target='_blank'
                   href='http://chng.it/V5n7bdmj'
-                  primary='true'
-                  dark='true'
+                  primary
+                  
                 >
                   {button}
                 </Button>
