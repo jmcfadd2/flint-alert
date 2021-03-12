@@ -10,14 +10,14 @@ export const textData = [
     name: 'solution'
   },
   {
-    heading: 'How To Get there?',
+    heading: 'How To Get Tmanhere?',
     text: 'Add boil water notifications to Public Safety Alert system so that smartphones are notfied',
     Animation: <NotifyAni />,
     callToAction: null,
     name: 'how'
   },
   {
-    heading: 'How To You Can Help?',
+    heading: 'How You Can Help?',
     text: 'Sign the petition to bring local official\'s awareness to the issue',
     Animation: <SignAni />,
     callToAction: 'Sign Here',
