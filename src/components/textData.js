@@ -10,8 +10,8 @@ export const textData = [
     name: 'solution'
   },
   {
-    heading: 'How To Get Tmanhere?',
-    text: 'Add boil water notifications to Public Safety Alert system so that smartphones are notfied',
+    heading: 'How To Get There?',
+    text: 'Add boil water notifications to Public Safety Alert system so that smartphones are notified',
     Animation: <NotifyAni />,
     callToAction: null,
     name: 'how'
