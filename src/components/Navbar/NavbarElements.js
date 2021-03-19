@@ -101,7 +101,7 @@ export const NavBtnLink = styled.a`
     background: ${colors.blue};
     white-space: nowrap;
     padding: 10px 22px;
-    color: #010606;
+    color: #fff;
     font-size: 16px;
     outline: none;
     border: none;
@@ -112,7 +112,7 @@ export const NavBtnLink = styled.a`
     &:hover {
       transition: all 0.1s ease-in-out;
       background: ${colors.accent};
-      color: #010606;
+      color: #fff;
 
     }
   `

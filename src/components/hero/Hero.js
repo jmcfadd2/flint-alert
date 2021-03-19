@@ -28,7 +28,7 @@ export default function Hero() {
             onMouseEnter={onHover}
             onMouseLeave={onHover}
             primary='true'
-            dark='true'
+            
           >
             Sign the Petition {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
